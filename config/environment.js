@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'rarwe',
     environment: environment,
     rootURL: '/',
-    locationType: 'auto',
+    locationType: 'auto', //history, hash, none and auto.
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
