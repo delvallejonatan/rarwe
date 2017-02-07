@@ -11,7 +11,7 @@ export default Ember.Route.extend({
       let band = this.modelFor('bands.band');
       let title = controller.get('title');
 
-      var song = Song.create({ title: title, band: band });
+      let song = Song.create({ title: title, band: band });
       band.get('songs').pushObject(song);
       controller.set('title', '');
     }
