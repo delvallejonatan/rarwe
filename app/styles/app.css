@@ -1,5 +1,36 @@
-.page-header a h1 {
-  color: #555;
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url('/assets/images/bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.page-header h1, .page-header small {
+  color: #000;
+}
+
+.list-group-item.active,
+.list-group-item.active:hover,
+.list-group-item.active:focus {
+  background-color: #dd6a58;
+  border-color: #dd6a58;
+}
+
+.page-header {
+  border-color: #dd6a58;
+}
+
+a.list-group-item,
+button.list-group-item,
+a.list-group-item:hover,
+button.list-group-item:hover,
+a.list-group-item:focus,
+button.list-group-item:focus {
+  color: #000;
 }
 
 .navbar-default .navbar-nav>li>a.active,
@@ -48,4 +79,49 @@
 
 .new-song-button {
   margin-left: 20px;
+}
+
+.rating-panel {
+  float: right;
+}
+
+a.star-rating {
+  color: inherit;
+  text-decoration: none;
+}
+
+.new-song {
+  position: relative;
+  top: 1px;
+}
+
+.new-song-button {
+  padding: 3px 10px;
+  margin-left: 15px;
+}
+
+.new-song-button, .new-band-button {
+  background-color: #dd6a58;
+  border-color: #dd6a58;
+  transition: transform .3s ease;
+}
+
+.new-song-button:hover, .new-band-button:hover {
+  transform: scale(1.15);
+  transition: transform .3s ease;
+  background-color: #dd6a58;
+  border-color: #dd6a58;
+}
+
+input[type="text"] {
+  padding-left: 4px;
+  outline: 0;
+  box-shadow: none;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: #dd6a58 !important;
+  border-color: #dd6a58 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
 }
