@@ -113,6 +113,10 @@ a.star-rating {
   border-color: #dd6a58;
 }
 
+.new-song-button[disabled], .new-band-button[disabled] {
+  transform: none;
+}
+
 input[type="text"] {
   padding-left: 4px;
   outline: 0;
