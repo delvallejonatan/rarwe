@@ -5,6 +5,9 @@ export default Ember.Route.extend({
   model() {
     return this.modelFor('bands.band');
   },
+  noSongs: Ember.computed('model.songs.length', function() {
+    return this.get('model.songs.length') === 0;
+  }),
   actions: {
     createSong() {
       let controller = this.get('controller');
