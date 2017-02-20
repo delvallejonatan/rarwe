@@ -129,3 +129,57 @@ input[type="text"] {
   outline: 0 !important;
   box-shadow: none !important;
 }
+
+.page-header a:hover,
+.page-header a:visited,
+.page-header a:focus,
+.page-header a:active {
+  text-decoration: none !important;
+}
+
+.nav-tabs > li > a.active,
+.nav-tabs > li > a.active:hover,
+.nav-tabs > li > a.active:focus {
+  color: #555;
+  cursor: default;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+}
+
+.band-description-header {
+  margin-bottom: 20px;
+}
+
+.songs-li {
+  border-radius: 0 !important;
+  border-top: 0;
+}
+
+.songs .empty-list {
+  border-top-right-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+  border-top: 0;
+}
+
+.detail-li {
+  border-top: 0;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+}
+
+.detail-li .description {
+  margin-top: 10px;
+}
+
+.nav-tabs > li > a.active,
+.nav-tabs > li > a.active:hover,
+.nav-tabs > li > a.active:focus {
+  color: #dd6a58;
+}
+
+.nav > li > a {
+  color: #000;
+}
