@@ -1,6 +1,19 @@
-  <ul class="list-group detail">
-    <li class="list-group-item detail-li">
-      <p class="description">Description</p>
+<ul class="list-group detail">
+  <li class="list-group-item detail-li">
+    <span class="description">Description</span>
+    {{#if isEditing}}
+      <button class="btn btn-primary" {{action "save"}}>Save</button>
+    {{else}}
+      <button class="btn btn-primary" {{action "edit"}}>{{label}}</button>
+    {{/if}}
+  </li>
+  <li class="list-group-item">
+    {{#if isEditing}}
+      <div class="form-group detail-form-group">
+        {{textarea class="form-control" value=model.description}}
+      </div>
+    {{else}}
       <p>{{model.description}}</p>
-    </li>
-  </ul>
+    {{/if}}
+  </li>
+</ul>

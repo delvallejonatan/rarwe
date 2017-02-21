@@ -164,8 +164,6 @@ input[type="text"] {
 
 .detail-li {
   border-top: 0;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
   border-top-right-radius: 0 !important;
   border-top-left-radius: 0 !important;
 }
@@ -182,4 +180,18 @@ input[type="text"] {
 
 .nav > li > a {
   color: #000;
+}
+
+.detail .btn {
+  padding: 3px 10px;
+  font-size: 13px;
+  margin-left: 15px;
+}
+
+.detail-form-group {
+  margin: 5px 0;
+}
+
+.detail p {
+  margin: 10px 0;
 }
