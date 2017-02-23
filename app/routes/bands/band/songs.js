@@ -1,5 +1,4 @@
 import Ember from 'ember';
-import Song from '../../../models/song';
 
 export default Ember.Route.extend({
   model() {
@@ -12,10 +11,13 @@ export default Ember.Route.extend({
     createSong() {
       let controller = this.get('controller');
       let band = this.modelFor('bands.band');
-      let title = controller.get('title');
-      let song = Song.create({ title: title, band: band });
-      band.get('songs').pushObject(song);
-      controller.set('title', '');
+      let song = this.store.createRecord('song', {
+        title: controller.get('title'),
+        band
+      });
+      song.save().then(() => {
+        controller.set('title', '');
+      });
     },
     didTransition() {
       let band = this.modelFor('bands.band');

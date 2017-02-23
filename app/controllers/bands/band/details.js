@@ -9,6 +9,7 @@ export default Ember.Controller.extend({
     save() {
       this.set('isEditing', false);
       this.set('label', 'Edit');
+      return true;
     }
   }
 });

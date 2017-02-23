@@ -5,7 +5,7 @@ export default Ember.Route.extend({
     return this.modelFor('bands.band');
   },
   setupController(controller, model) {
-    if (model.description.length > 0) {
+    if (!Ember.isEmpty(model.description)) {
       controller.set('label', 'Edit');
     } else {
       controller.set('label', 'Add');
@@ -27,6 +27,11 @@ export default Ember.Route.extend({
     didTransition() {
       let band = this.modelFor('bands.band');
       document.title = `${band.get('name')} details - Rock & Roll`;
+    },
+    save() {
+      let controller = this.get('controller');
+      let band = controller.get('model');
+      return band.save();
     }
   }
 });

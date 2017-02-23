@@ -11,7 +11,7 @@
   "repository": "",
   "scripts": {
     "build": "ember build",
-    "start": "ember server",
+    "start": "ember serve --proxy=http://json-api.rockandrollwithemberjs.com",
     "test": "ember test"
   },
   "devDependencies": {
