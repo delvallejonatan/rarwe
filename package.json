@@ -12,7 +12,8 @@
   "scripts": {
     "build": "ember build",
     "start": "ember serve --proxy=http://json-api.rockandrollwithemberjs.com",
-    "test": "ember test"
+    "test": "ember test",
+    "deploy": "./scripts/deploy.sh"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
