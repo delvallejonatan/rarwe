@@ -46,7 +46,7 @@ module.exports = function(environment) {
   if (environment === 'production') {
     ENV.apiHost = 'http://json-api.rockandrollwithemberjs.com';
     ENV.baseURL='/rarwe';
-    ENV.baseURL='/rarwe/';
+    ENV.rootURL='/rarwe/';
   }
 
   return ENV;
