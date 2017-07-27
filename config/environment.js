@@ -44,7 +44,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.apiHost = 'http://json-api.rockandrollwithemberjs.com';
+    ENV.apiHost = 'https://cors-anywhere.herokuapp.com/http://json-api.rockandrollwithemberjs.com';
     ENV.baseURL = '/rarwe';
     ENV.locationType = 'hash';
   }

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-npm run build;
+ember build --environment production;
 git commit -am "Save local changes";
 git checkout -B gh-pages;
 git add -f dist;
