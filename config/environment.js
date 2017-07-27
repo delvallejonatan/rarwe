@@ -4,7 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'rarwe',
     environment: environment,
-    rootURL: '/',
+    baseURL: '/rarwe',
+    rootURL: '/rarwe/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
