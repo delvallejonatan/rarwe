@@ -1,11 +1,11 @@
-/* jshint node: true */
+/* eslint-env node */
 
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'rarwe',
     environment: environment,
     rootURL: '/',
-    locationType: 'auto', //history, hash, none and auto.
+    locationType: 'auto',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -20,7 +20,8 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    },
+    apiHost: 'http://json-api.rockandrollwithemberjs.com',
   };
 
   if (environment === 'development') {
@@ -43,7 +44,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.apiHost = 'http://json-api.rockandrollwithemberjs.com';
   }
 
   return ENV;
