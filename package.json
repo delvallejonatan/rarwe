@@ -10,7 +10,7 @@
   },
   "repository": "",
   "scripts": {
-    "build": "ember build",
+    "build": "ember build --environment production",
     "start": "ember serve --proxy=http://json-api.rockandrollwithemberjs.com",
     "test": "ember test",
     "deploy": "./scripts/deploy.sh"
