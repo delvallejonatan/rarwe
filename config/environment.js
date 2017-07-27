@@ -4,8 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'rarwe',
     environment: environment,
-    baseURL: '/rarwe/',
-    rootURL: '/rarwe/',
+    rootURL: '/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
@@ -46,8 +45,6 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     ENV.apiHost = 'http://json-api.rockandrollwithemberjs.com';
-    ENV.baseURL='/rarwe';
-    ENV.rootURL='/rarwe/';
   }
 
   return ENV;
