@@ -21,7 +21,7 @@ module.exports = function(environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
     },
-    apiHost: 'https://json-api.rockandrollwithemberjs.com',
+    apiHost: 'https://cors-anywhere.herokuapp.com/http://json-api.rockandrollwithemberjs.com'
   };
 
   if (environment === 'development') {
